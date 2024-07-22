@@ -50,3 +50,8 @@
 -- - Computer has 1 student, so we do not include it.
 
 # Write your MySQL query statement below
+
+SELECT class
+FROM Courses
+GROUP BY class
+HAVING COUNT(student) >= 5
